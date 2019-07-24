@@ -40,6 +40,8 @@ namespace BookRegistrationEntityFramework
             using(var context = new BookRegistrationEntities())
             {
                 context.Customer.Add(c);
+                //save changes MUST be called with inserts, updates, and deletes
+                context.SaveChanges();
                 return c;
             }
         }

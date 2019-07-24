@@ -30,6 +30,7 @@
         {
             this.cboCustomers = new System.Windows.Forms.ComboBox();
             this.cboBooks = new System.Windows.Forms.ComboBox();
+            this.btnAddCust = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cboCustomers
@@ -39,6 +40,7 @@
             this.cboCustomers.Name = "cboCustomers";
             this.cboCustomers.Size = new System.Drawing.Size(269, 21);
             this.cboCustomers.TabIndex = 0;
+            this.cboCustomers.Text = "Customers";
             // 
             // cboBooks
             // 
@@ -47,12 +49,24 @@
             this.cboBooks.Name = "cboBooks";
             this.cboBooks.Size = new System.Drawing.Size(269, 21);
             this.cboBooks.TabIndex = 1;
+            this.cboBooks.Text = "Books";
+            // 
+            // btnAddCust
+            // 
+            this.btnAddCust.Location = new System.Drawing.Point(58, 165);
+            this.btnAddCust.Name = "btnAddCust";
+            this.btnAddCust.Size = new System.Drawing.Size(130, 62);
+            this.btnAddCust.TabIndex = 2;
+            this.btnAddCust.Text = "Add Customer";
+            this.btnAddCust.UseVisualStyleBackColor = true;
+            this.btnAddCust.Click += new System.EventHandler(this.BtnAddCust_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAddCust);
             this.Controls.Add(this.cboBooks);
             this.Controls.Add(this.cboCustomers);
             this.Name = "Form1";
@@ -66,6 +80,7 @@
 
         private System.Windows.Forms.ComboBox cboCustomers;
         private System.Windows.Forms.ComboBox cboBooks;
+        private System.Windows.Forms.Button btnAddCust;
     }
 }
 
