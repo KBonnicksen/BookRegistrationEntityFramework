@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookRegistrationEntityFramework
 {
-    static class CustomerDb
+    static class CustomerDB
     {
         /// <summary>
         /// Returns all customers from the database
